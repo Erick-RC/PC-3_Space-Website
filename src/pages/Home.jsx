@@ -1,30 +1,37 @@
-// import React from "react";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Home() {
-
     useEffect(() => {
         let linkItem = document.querySelector("#home");
-        linkItem.classList.add("active");
-        linkItem.classList.remove("hover_effect");
-
         let linkItem2 = document.querySelector("#home2");
-        linkItem2.classList.add("active");
-        linkItem2.classList.remove("hover_effect");
-        
-        return () => {
-            linkItem.classList.remove("active");
-            linkItem.classList.add("hover_effect");
-            
-            linkItem2.classList.remove("active");
-            linkItem2.classList.add("hover_effect");
+
+        if (linkItem) {
+            linkItem.classList.add("active");
+            linkItem.classList.remove("hover_effect");
         }
 
-    });
+        if (linkItem2) {
+            linkItem2.classList.add("active");
+            linkItem2.classList.remove("hover_effect");
+        }
+
+        return () => {
+            if (linkItem) {
+                linkItem.classList.remove("active");
+                linkItem.classList.add("hover_effect");
+            }
+
+            if (linkItem2) {
+                linkItem2.classList.remove("active");
+                linkItem2.classList.add("hover_effect");
+            }
+        }
+    }, []);
+
     return (
-        <main className="home">
-            <div className="div-home">
+        <main className="home h-screen">
+            <div className="div-home h-screen">
                 <div className="f-child">
                     <h4 className="top-el">So, you want to travel to</h4>
                     <h1>Space</h1>

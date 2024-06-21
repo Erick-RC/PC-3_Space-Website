@@ -56,7 +56,7 @@ function Planet() {
     });
 
     return (
-        <main className="destination">
+        <main className="destination h-screen">
             <div className="content">
                 <h3>
                     <span>01</span> Pick your destination

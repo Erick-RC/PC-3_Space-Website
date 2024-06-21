@@ -7,31 +7,27 @@
 @layer base {
     body {
         @apply font-barlow;
-        @apply bg-red-600;
+        @apply bg-[#111527];
         @apply text-white;
     }
 }
 
 .home {
-    height: 89.2vh;
     background-image: url(./assets/home/background-home-desktop.jpg);
     background-repeat: repeat;
     background-size: cover;
 }
 .destination {
-    height: 100%;
     background-image: url(./assets/destination/background-destination-desktop.jpg);
     background-repeat: repeat;
     background-size: cover;
 }
 .crew {
-    height: 89.2vh;
     background-image: url(./assets/crew/background-crew-desktop.jpg);
     background-repeat: repeat;
     background-size: cover;
 }
 .tech {
-    height: 89.2vh;
     background-image: url(./assets/technology/background-technology-desktop.jpg);
     background-repeat: repeat;
     background-size: cover;

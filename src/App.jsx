@@ -23,9 +23,6 @@ function App() {
                     </Routes>
                 </Router>
             </div>
-
-            <footer className="h-20 text-center flex justify-center items-center">
-            </footer>
         </>
     );
 }

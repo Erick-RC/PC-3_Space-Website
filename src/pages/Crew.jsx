@@ -55,7 +55,7 @@ function Crew() {
 
     return (
         <main className="crew">
-            <div className="content-c">
+            <div className="content-c h-screen w-full">
                 <h3>
                     <span>02</span> Meet your crew
                 </h3>
